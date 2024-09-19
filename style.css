@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+/* 
+============
+global style
+============
+*/
+.section-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.btn {
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border-color: #fff;
+  border: 2px solid #fff;
+  color: cadetblue;
+  font-size: 1.5rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* 
+============
+navbar style
+============
+*/
+.navbar {
+  height: 5rem;
+  background: #222;
+  display: grid;
+  justify-items: center;
+}
+.navbar-center {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  /* justify-items: center; */
+}
+.navbar-links {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.nav-link {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s linear;
+}
+.nav-link:hover {
+  color: darkgray;
+}
+.nav-logo {
+  color: cadetblue;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+/* 
+==============
+header section
+==============
+*/
+.header {
+  min-height: calc(100vh - 5rem);
+  background-color: chocolate;
+  background-image: linear-gradient(
+      rgba(167, 37, 27, 0.1),
+      rgba(167, 37, 27, 0.1)
+    ),
+    url(./images/background.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  /* display: grid;
+  place-items: center;
+  text-align: center; */
+}
+.hero-center {
+  padding: 5rem 0;
+  /* display: grid;
+  place-items: center; */
+}
+
+.hero-center h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  color: cadetblue;
+}
+.hero-center p {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  max-width: 35em;
+  color: darkgrey;
+  font-size: 1.5rem;
+}
